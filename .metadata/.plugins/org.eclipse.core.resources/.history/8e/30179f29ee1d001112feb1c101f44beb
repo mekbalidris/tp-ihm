@@ -1,0 +1,19 @@
+package exo2;
+
+public class variable implements Constante{
+	private String nom;
+	
+	public variable(String nom) {
+		this.nom= nom;
+	}
+	
+	@Override
+	public float evaluer(float valeurZ) {
+		return valeurZ;
+	}
+	
+	@Override
+	public String afficher() {
+		return this.nom;
+	}
+}

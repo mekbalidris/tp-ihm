@@ -1,0 +1,9 @@
+INDEX VERSION 1.134+C:\Users\idris\OneDrive\Desktop\Java\.metadata\.plugins\org.eclipse.jdt.core
+1622772588.index
+2166131123.index
+1825631124.index
+1865797976.index
+1939263126.index
+3046496373.index
+2175910664.index
+312800601.index

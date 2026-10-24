@@ -1,0 +1,17 @@
+public class Constante implements Expression {
+    private float valeur;
+
+    public Constante(float valeur) {
+        this.valeur = valeur;
+    }
+
+    @Override
+    public float evaluer(float valeurZ) {
+        return this.valeur;
+    }
+
+    @Override
+    public String afficher() {
+        return String.valueOf(valeur);
+    }
+}

@@ -1,0 +1,8 @@
+package alldesignepatterns;
+
+public class Fahrenhite {
+	
+	public void Fahrenhite(int degree) {
+		
+	}
+}
