@@ -4,6 +4,7 @@ import java.awt.Dimension;
 import java.awt.Font;
 import java.awt.Image;
 import java.awt.Insets;
+import java.net.URL;
 import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -39,7 +40,11 @@ public class App {
         display.setBackground(new Color(255, 198, 0));
         display.setBorder(BorderFactory.createLineBorder(new Color(195, 155, 0), 2));
 
-        ImageIcon image = new ImageIcon("src\\Java-Logo.jpg");
+        URL imageUrl = App.class.getResource("/Java-Logo.jpg");
+        if (imageUrl == null) {
+            throw new IllegalStateException("Could not find Java-Logo.jpg on the classpath");
+        }
+        ImageIcon image = new ImageIcon(imageUrl);
         Image scaledImage = image.getImage().getScaledInstance(320, 160, Image.SCALE_SMOOTH);
         JLabel logo = new JLabel(new ImageIcon(scaledImage), SwingConstants.CENTER);
         logo.setOpaque(true);
